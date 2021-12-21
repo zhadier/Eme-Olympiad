@@ -90,7 +90,7 @@ header {
   height: 100vh;
   top: -200%;
   left: 0;
-  background: var(--colorBl) url('/assets/images/pattern-bg.png');
+  background: var(--colorBl) url('../images/pattern-bg.png');
   transition: top 2s;
   display: flex;
   flex-direction: column;
@@ -200,7 +200,7 @@ header {
   width: 100%;
   height: 100%;
   opacity: 0.2;
-  background-image: url('/assets/images/rock.png');
+  background-image: url('../images/rock.png');
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
@@ -224,7 +224,7 @@ header {
 #headline h1 {
   font-size: var(--fontSize-h1);
   font-weight: 900;
-  background-image: url('/assets/images/Text-bg.png');
+  background-image: url('../images/Text-bg.png');
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -256,7 +256,7 @@ header {
 
 /* ### Events Section ### */
 #events {
-  background: #272a31 url('/assets/images/pattern-bg.png');
+  background: #272a31 url('../images/pattern-bg.png');
 }
 
 #events .container-fluid {
@@ -386,7 +386,7 @@ header {
   height: 70px;
   top: 0px;
   left: 0px;
-  background: url('/assets/images/speakerbg.png');
+  background: url('../images/speakerbg.png');
   opacity: 0.7;
   border: 1px solid black;
 }
@@ -430,7 +430,7 @@ header {
   width: 100%;
   height: 100%;
   opacity: 0.5;
-  background-image: url('/assets/images/about.png');
+  background-image: url('../images/about.png');
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
@@ -593,7 +593,7 @@ header {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: url("/assets/images/past1.jpg") 0 50%;
+  background: url("../images/past1.jpg") 0 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -606,7 +606,7 @@ header {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: url("/assets/images/past2.jpeg") 0 50%;
+  background: url("../images/past2.jpeg") 0 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
