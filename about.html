@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- ### Styles ### -->
-    <link rel="stylesheet" href="Assets/styles/all.css">
-    <link rel="stylesheet" href="Assets/styles/responsive.css">
-    <link rel="stylesheet" href="Assets/styles/mainstyles.css">
+    <link rel="stylesheet" href="assets/styles/all.css">
+    <link rel="stylesheet" href="assets/styles/responsive.css">
+    <link rel="stylesheet" href="assets/styles/mainstyles.css">
     <!-- ### title ### -->
     <title>About Eme-Olympiad</title>
     <!-- ### Javascript ### -->
-    <script src="Assets/index.js"></script>
+    <script src="assets/index.js" defer></script>
 </head>
 
 <body>
@@ -23,19 +23,23 @@
         </nav>
         <nav class="navbar-main">
             <div class="container-fluid">
-                <button id="navbar-main__toggler" type="button">
+                <button class="navbar-main__toggler" type="button">
                     <i class="fas fa-bars"></i>
                 </button>
-                <div class="collapse">
-                    <a class="navbar-main__brand" href="#"><img src="Assets/images/eme-olympiad-logo.jpg" alt=""></a>
+                <div class="navbar-main__nav">
+                    <button class="navbar-button__close">x</button>
+                    <a class="navbar-main__brand" href="index.html"><img src="assets/images/eme-olympiad-logo.jpg" alt=""></a>
                     <ul class="navbar-main__list">
-                        <li> <a class="navbar-main__link" aria-current="page" href="#">About</a></li>
-                        <li><a class="navbar-main__link" href="#">Events</a></li>
+                        <li> <a class="navbar-main__link" href="index.html">Home</a></li>
+                        <li><a class="navbar-main__link" href="#events">Events</a></li>
                         <li> <a class="navbar-main__link" href="#">Join</a></li>
                         <li><a class="navbar-main__link" href="#">Sponsor</a></li>
                         <li><a class="navbar-main__link" href="#">News</a></li>
-                        <li><button id="cc-campaign" type="button">Get Tickets</button></li>
                     </ul>
+                    <button id="cc-campaign" type="button">Get Tickets</button>
+                    <div class="menu-end">
+                        <hr>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -62,7 +66,7 @@
             <hr class="section__hr">
             <p>The Olympiad logo 2020 was decided after a logo design competition from 8. June to 7.July throughout the
                 university campus</p>
-            <div class="about-logo__show"><img src="/Assets/images/eme-olympiad-logo.jpg" alt=""></div>
+            <div class="about-logo__show"><img src="/assets/images/eme-olympiad-logo.jpg" alt=""></div>
         </div>
     </section>
     <section id="about-past">
@@ -101,7 +105,7 @@
     </section>
     <section id="footer">
         <div class="container-fluid">
-            <img src="/Assets/images/nust.png" alt="">
+            <img src="/assets/images/nust.png" alt="">
             <p>2020 NUST EME. <br> Some Rights Reserved</p>
         </div>
     </section>

@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: 'Cocogoose';
-  src: url(Assets/Cocogoose_trial.otf);
-  src: local('Cocogoose'), url(Assets/Cocogoose_trial.otf) format('truetype');
+  src: url(assets/Cocogoose_trial.otf);
+  src: local('Cocogoose'), url(assets/Cocogoose_trial.otf) format('truetype');
 }
 
 /* ### PreProcessing ### */
@@ -55,6 +55,7 @@ p {
 
 header {
   position: absolute;
+  z-index: 5;
   top: 0;
   left: 0;
   width: 100%;
@@ -69,21 +70,120 @@ header {
   background-color: rgba(255, 255, 255, 0);
 }
 
-.collapse {
-  display: none;
-}
-
 .navbar-main__brand img {
+  display: none;
   width: 80px;
   height: 80px;
 }
 
-#navbar-main__toggler {
+.navbar-main__toggler {
   border: 0px;
   font-size: 2rem;
   color: rgb(77, 75, 75);
   margin: 20px 0 20px 0;
   background-color: inherit;
+}
+
+.navbar-main__nav {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: -200%;
+  left: 0;
+  background: var(--colorBl) url('/assets/images/pattern-bg.png');
+  transition: top 2s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+#cc-campaign {
+  display: none;
+}
+
+/* ### Menu Dropdown ### */
+
+.collapse {
+  top: 0;
+  left: 0;
+  z-index: 5;
+  transition: top ease-out 1s;
+}
+
+@keyframes slidein {
+  from {
+    top: -100%;
+  }
+
+  to {
+    top: 0;
+  }
+}
+
+.navbar-button__close {
+  align-self: flex-end;
+  background-color: inherit;
+  color: var(--colorWh);
+  border: 1px none;
+  font-size: 2rem;
+  margin-top: 5px;
+  padding: 1px;
+  display: flex;
+  margin-right: 7%;
+  transition: 0s;
+}
+
+.nav-button__close:hover {
+  color: var(--colorOr);
+  border: 0;
+}
+
+.nav-button__close:focus {
+  color: inherit;
+}
+
+.navbar-main__list {
+  list-style: none;
+  width: 100%;
+  padding: 7%;
+  margin: 0;
+}
+
+.navbar-main__list li {
+  border-bottom: 1px solid #6f6c6b;
+  padding: 4%;
+  margin-bottom: 5px;
+}
+
+.navbar-main__link {
+  text-decoration: none;
+  color: var(--colorWh);
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.menu-end {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  margin-top: auto;
+  padding: 0;
+  height: 5%;
+  align-items: flex-end;
+  justify-items: center;
+}
+
+.menu-end hr {
+  border-top: 5px solid black;
+  margin: auto;
+  width: 30%;
+  margin-bottom: 10px;
 }
 
 /* ### headline section ### */
@@ -100,13 +200,12 @@ header {
   width: 100%;
   height: 100%;
   opacity: 0.2;
-  background-image: url('/Assets/images/rock.png');
+  background-image: url('/assets/images/rock.png');
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
   z-index: -1;
 }
-
 
 #headline .container-fluid {
   flex-direction: column;
@@ -125,7 +224,7 @@ header {
 #headline h1 {
   font-size: var(--fontSize-h1);
   font-weight: 900;
-  background-image: url('/Assets/images/Text-bg.png');
+  background-image: url('/assets/images/Text-bg.png');
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -157,7 +256,7 @@ header {
 
 /* ### Events Section ### */
 #events {
-  background: #272a31 url('/Assets/images/pattern-bg.png');
+  background: #272a31 url('/assets/images/pattern-bg.png');
 }
 
 #events .container-fluid {
@@ -287,7 +386,7 @@ header {
   height: 70px;
   top: 0px;
   left: 0px;
-  background: url('/Assets/images/speakerbg.png');
+  background: url('/assets/images/speakerbg.png');
   opacity: 0.7;
   border: 1px solid black;
 }
@@ -331,7 +430,7 @@ header {
   width: 100%;
   height: 100%;
   opacity: 0.5;
-  background-image: url('/Assets/images/about.png');
+  background-image: url('/assets/images/about.png');
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
@@ -494,7 +593,7 @@ header {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: url("/Assets/images/past1.jpg") 0 50%;
+  background: url("/assets/images/past1.jpg") 0 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -507,7 +606,7 @@ header {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: url("/Assets/images/past2.jpeg") 0 50%;
+  background: url("/assets/images/past2.jpeg") 0 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }

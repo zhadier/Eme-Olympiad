@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- ### Styles ### -->
-    <link rel="stylesheet" href="Assets/styles/all.css">
-    <link rel="stylesheet" href="Assets/styles/responsive.css">
-    <link rel="stylesheet" href="Assets/styles/mainstyles.css">
+    <link rel="stylesheet" href="assets/styles/all.css">
+    <link rel="stylesheet" href="assets/styles/responsive.css">
+    <link rel="stylesheet" href="assets/styles/mainstyles.css">
     <!-- ### title ### -->
     <title>Eme Olympiad</title>
     <!-- ### Javascript ### -->
-    <script src="Assets/index.js"></script>
+    <script src="/assets/index.js" defer></script>
 </head>
 
 <body>
@@ -24,19 +24,23 @@
         </nav>
         <nav class="navbar-main">
             <div class="container-fluid">
-                <button id="navbar-main__toggler" type="button">
+                <button class="navbar-main__toggler" type="button">
                     <i class="fas fa-bars"></i>
                 </button>
-                <div class="collapse">
-                    <a class="navbar-main__brand" href="#"><img src="Assets/images/eme-olympiad-logo.jpg" alt=""></a>
+                <div class="navbar-main__nav">
+                    <button class="navbar-button__close">x</button>
+                    <a class="navbar-main__brand" href="/index.html"><img src="assets/images/eme-olympiad-logo.jpg" alt=""></a>
                     <ul class="navbar-main__list">
-                        <li> <a class="navbar-main__link" aria-current="page" href="#">About</a></li>
-                        <li><a class="navbar-main__link" href="#">Events</a></li>
+                        <li> <a class="navbar-main__link" href="/about.html">About</a></li>
+                        <li><a class="navbar-main__link" href="#events">Events</a></li>
                         <li> <a class="navbar-main__link" href="#">Join</a></li>
                         <li><a class="navbar-main__link" href="#">Sponsor</a></li>
                         <li><a class="navbar-main__link" href="#">News</a></li>
-                        <li><button id="cc-campaign" type="button">Get Tickets</button></li>
                     </ul>
+                    <button id="cc-campaign" type="button">Get Tickets</button>
+                    <div class="menu-end">
+                        <hr>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -103,7 +107,7 @@
             </div>
             <article class="singer1 singer">
                 <div class="featured-singers__img">
-                    <img src="/Assets/images/Atif-Aslam.jpg" alt="">
+                    <img src="/assets/images/Atif-Aslam.jpg" alt="">
                 </div>
                 <div class="featured-singers__desc">
                     <h3>Atif Aslam</h3>
@@ -116,7 +120,7 @@
                 </div>
             </article>
             <article class="singer2 singer">
-                <div class="featured-singers__img"> <img src="/Assets/images/aima-baig.jpg" alt=""></div>
+                <div class="featured-singers__img"> <img src="/assets/images/aima-baig.jpg" alt=""></div>
                 <div class="featured-singers__desc">
                     <h3>Aima Baig</h3>
                     <h4>
@@ -127,7 +131,7 @@
                 </div>
             </article>
             <article class="singer3 singer toggle">
-                <div class="featured-singers__img"> <img src="/Assets/images/rahat.jpg" alt=""></div>
+                <div class="featured-singers__img"> <img src="/assets/images/rahat.jpg" alt=""></div>
                 <div class="featured-singers__desc">
                     <h3></h3>
                     <h4></h4>
