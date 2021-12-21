@@ -24,7 +24,7 @@ const singersArray = [{
   {
     name: 'Falak Shabbir',
     accolades: 'Owner of Falak Records Music',
-    desc: 'A Pakistani singer-songwriter, also referred as the "King of Soul Style" and "Mr. Unplugged". He first came to attention with his 2008 debut single "Rog", which was commercially successful',
+    desc: 'A Pakistani singer-songwriter, also referred as the "King of Soul Style", He first came to attention with his 2008 debut single "Rog"',
     image: 'assets/images/falak.jpg',
     class: 'singer4',
   },
@@ -37,8 +37,8 @@ const singersArray = [{
   },
   {
     name: 'Momina Mustehsan',
-    accolades: 'BBC named her one of the 100 most influential women, and the following year, Forbes featured her among its "30 Under 30"',
-    desc: 'The release of the 2016 song "Afreen Afreen" established Mustehsan as one of the most recognized singers of Pakistan. She is among the most followed Pakistani celebrities on social media',
+    accolades: 'BBC 100 most influential women, Forbes "30 Under 30"',
+    desc: 'The release of the 2016 song "Afreen Afreen" established Mustehsan as one of the most recognized singers of Pakistan',
     image: 'assets/images/Momina-Mustehsan.jpg',
     class: 'singer6',
   },
@@ -87,21 +87,17 @@ more.addEventListener('click', () => {
 });
 
 // ### Nav Menu ###
-const openMenu = document.querySelectorAll('.navbar-main__toggler');
-const closeMenu = document.querySelectorAll('.navbar-button__close');
+const openMenu = document.querySelector('.navbar-main__toggler');
+const closeMenu = document.querySelector('.navbar-button__close');
 const menu = document.querySelector('.navbar-main__nav');
 const menuLinks = document.querySelectorAll('.navbar-main__list li');
 
-closeMenu.forEach((cm) => {
-  cm.addEventListener('click', () => {
-    menu.classList.toggle('collapse');
-  });
+closeMenu.addEventListener('click', () => {
+  menu.classList.toggle('collapse');
 });
 
-openMenu.forEach((om) => {
-  om.addEventListener('click', () => {
-    menu.classList.toggle('collapse');
-  });
+openMenu.addEventListener('click', () => {
+  menu.classList.toggle('collapse');
 });
 
 menuLinks.forEach((li) => {

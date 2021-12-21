@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: 'Cocogoose';
-  src: url(assets/Cocogoose_trial.otf);
-  src: local('Cocogoose'), url(assets/Cocogoose_trial.otf) format('truetype');
+  src: url(../Cocogoose_trial.otf);
+  src: local('Cocogoose'), url(../Cocogoose_trial.otf) format('truetype');
 }
 
 /* ### PreProcessing ### */
@@ -73,7 +73,7 @@ header {
 .navbar-main__brand img {
   display: none;
   width: 80px;
-  height: 80px;
+  height: 60px;
 }
 
 .navbar-main__toggler {
@@ -100,6 +100,14 @@ header {
 
 #cc-campaign {
   display: none;
+  border: 3px solid var(--colorOr);
+  color: var(--colorOr);
+  background:#fff;
+  min-width: 90px;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
 }
 
 /* ### Menu Dropdown ### */
@@ -109,16 +117,6 @@ header {
   left: 0;
   z-index: 5;
   transition: top ease-out 1s;
-}
-
-@keyframes slidein {
-  from {
-    top: -100%;
-  }
-
-  to {
-    top: 0;
-  }
 }
 
 .navbar-button__close {
@@ -159,7 +157,7 @@ header {
 .navbar-main__link {
   text-decoration: none;
   color: var(--colorWh);
-  font-family: 'Inter', sans-serif;
+  font-family: 'lato', sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -215,14 +213,12 @@ header {
 }
 
 #headline h2 {
-  font-size: var(--fontSize-h2);
   color: var(--colorOr);
-  font-family: var(--fontFamily-coco);
-  font-weight: 500;
+  font-family: var(--fontFamily-lato);
+  font-weight: normal;
 }
 
 #headline h1 {
-  font-size: var(--fontSize-h1);
   font-weight: 900;
   background-image: url('../images/Text-bg.png');
   background-clip: border-box;
@@ -244,14 +240,17 @@ header {
 }
 
 .headline__date {
-  color: var(--colorBl);
+  color: var(--colorGr);
+  font-weight: 800;
   font-size: var(--fontSize-h2);
+  font-family:var(--fontFamily-lato);
   text-align: center;
 }
 
 .headline__location {
   color: var(--colorBl);
   text-align: center;
+  font-family: var(--fontFamily-lato);
 }
 
 /* ### Events Section ### */
@@ -324,6 +323,10 @@ header {
   font-weight: bold;
   color: var(--colorWh);
   background-color: var(--colorOr);
+}
+
+.participate-link {
+  display: none;
 }
 
 /* ### featured singers section ### */
@@ -409,10 +412,14 @@ header {
 
 .featured-singers__desc h4 {
   margin-top: 10px;
-  font-family: var(--fontFamily-coco);
+  font-family: var(--fontFamily-lato);
   color: var(--colorOr);
   font-style: italic;
   font-weight: 400;
+}
+
+.featured-singers__desc p {
+  font-family: var(--fontFamily-lato);
 }
 
 /* ### About-Me page ### */
@@ -445,7 +452,6 @@ header {
 }
 
 #about-hero h2 {
-  font-size: var(--fontSize-h2);
   text-align: center;
   color: var(--colorOr);
   font-family: var(--fontFamily-coco);
@@ -455,7 +461,6 @@ header {
 #about-hero h1 {
   color: var(--colorOr);
   text-align: center;
-  font-size: var(--fontSize-h1);
   font-weight: 900;
 }
 
@@ -467,7 +472,6 @@ header {
 }
 
 #about-hero p {
-  font-size: var(--font-size-p);
   text-align: center;
   line-height: 1.5;
 }
@@ -525,6 +529,7 @@ header {
 
 .about-logo__show img {
   width: 50%;
+  max-width: 500px;
 }
 
 /* ### About Past ### */
@@ -630,6 +635,13 @@ header {
   min-height: 150px;
 }
 
+#partners-main {
+  margin: 80px 0 0;
+  background: var(--colorGr);
+  min-height: 150px;
+  display: none;
+}
+
 #partners .container-fluid {
   padding: 10% 0 10%;
   width: 90%;
@@ -640,6 +652,22 @@ header {
 }
 
 #partners h2 {
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  font-family: var(--fontFamily-lato);
+}
+
+#partners-main .container-fluid {
+  padding: 10% 0 10%;
+  width: 90%;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#partners-main h2 {
   color: white;
   font-weight: 500;
   text-align: center;
@@ -688,6 +716,11 @@ header {
   padding: 5px 0 5px;
 }
 
+#footer-main {
+  padding: 5px 0 5px;
+  display: none;
+}
+
 #footer .container-fluid {
   width: 90%;
   margin: auto;
@@ -701,6 +734,25 @@ header {
 }
 
 #footer .container-fluid p {
+  font-family: var(--fontFamily-lato);
+  font-weight: normal;
+  font-size: 0.7rem;
+  color: var(--colorBl);
+}
+
+#footer-main .container-fluid {
+  width: 90%;
+  margin: auto;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#footer-main img {
+  width: 130px;
+  margin-right: 20px;
+}
+
+#footer-main .container-fluid p {
   font-family: var(--fontFamily-lato);
   font-weight: normal;
   font-size: 0.7rem;
