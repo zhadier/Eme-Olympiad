@@ -1,59 +1,44 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# EME Olympiad
 
-> One paragraph statement about the project.
+> This Webpage is for my Capstone Project for the Html-Css module at Microverse. It is based on an annual event held in my University called EME Olympiad, which is basically an extravaganza of concerts, sport events, arts and so on.
 
-![screenshot](./app_screenshot.png)
+![screenshot](https://user-images.githubusercontent.com/90556221/147119548-d76fed22-56f3-480e-b79c-13bbfb9f10c8.png)
 
-Additional description about the project and its features.
+It is a simple web page which contains information about all the events held in EME Olympiad in 2020.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML / CSS / JavaScript
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://zhadier.github.io/Capstone-Project-1---Eme-Olympiad/)
 
+## Video presentation
+
+[Click here to see the presentation]
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+### To launch the project locally:
 
+#### Step 1:
+- Clone this repo locally using git and the following git command
 
-To get a local copy up and running follow these simple example steps.
+  git clone https://github.com/USERNAME/REPOSITORY
 
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
+#### Step 2:
+- Run index.html file in your browser
+- Use developer tools in order to view Mobile version
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Zeeshan Haider**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@zhadier](https://github.com/zhadier)
 
 ## 🤝 Contributing
 
@@ -67,9 +52,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- The webpage was based on a design by: [Cindy Shin](https://www.behance.net/adagio07) (original design)
+
 
 ## 📝 License
 
