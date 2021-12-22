@@ -15,6 +15,7 @@ It is a simple web page which contains information about all the events held in 
 ## Live Demo
 
 [Live Demo Link](https://zhadier.github.io/Capstone-Project-1---Eme-Olympiad/)
+[Video Demo Link](https://www.loom.com/share/38e9a3bbcfbe49e7a680ff9179755a9b)
 
 ## Video presentation
 
