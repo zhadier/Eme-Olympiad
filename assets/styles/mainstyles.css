@@ -466,6 +466,7 @@ header {
 
 .about-hero__message {
   background-color: white;
+  color: var(--colorGr);
   padding: 5%;
   border: 1px var(--colorWh);
   margin-top: 5%;
@@ -473,6 +474,7 @@ header {
 
 #about-hero p {
   text-align: center;
+  font-size: 0.9rem;
   line-height: 1.5;
 }
 
@@ -513,9 +515,11 @@ header {
 }
 
 #about-logo p {
-  color: var(--colorBl);
+  color: var(--colorGr);
+  font-size: 0.9rem;
   font-weight: normal;
   text-align: center;
+  line-height: 1.4;
   font-family: var(--fontFamily-lato);
 }
 
@@ -553,7 +557,9 @@ header {
 }
 
 #about-past p {
-  color: var(--colorBl);
+  color: var(--colorGr);
+  line-height: 1.4;
+  font-size: 0.9rem;
   font-weight: normal;
   text-align: center;
   font-family: var(--fontFamily-lato);
@@ -734,9 +740,9 @@ header {
 }
 
 #footer .container-fluid p {
-  font-family: var(--fontFamily-lato);
+  font-family: var(--fontFamily-Lato);
   font-weight: normal;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   color: var(--colorBl);
 }
 

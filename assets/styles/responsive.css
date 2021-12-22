@@ -40,7 +40,31 @@
     }
 
     .navbar-top {
-        display: relative;
+        display: flex;
+        background-color: var(--colorGr);
+    }
+
+    .navbar-top .container-fluid{
+       justify-content: flex-end;
+       padding: 8px;
+    }
+
+    .navbar-top ul {
+        display: flex;
+        list-style: none;
+        gap: 15px;
+        font-size: 0.8rem;
+        align-items: center;
+    }
+
+    .navbar-top i{
+        color: var(--colorWh);
+    }
+
+    .navbar-top a{
+        text-decoration: none;
+        color: var(--colorWh);
+        font-family: var(--fontFamily-lato)
     }
 
     header {
@@ -282,7 +306,7 @@
 
     /* ### footer ### */
     #footer {
-    background:rgb(242, 237, 237);
+    background:rgb(252, 243, 243);
     padding: 2%;
     }
 
@@ -301,7 +325,7 @@
         font-family: var(--fontFamily-lato);
         font-weight: normal;
         color: var(--colorBl);
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     #footer .container-fluid p br{
        display: none;
@@ -341,12 +365,13 @@
 
     #about-hero p {
         color: var(--colorGr);
+        font-size: 1.1rem;
     }
 
 
     #about-logo {
         margin: 5% 0 0;
-        padding-bottom: 5%;
+        padding-bottom: 3%;
     }
 
     #about-logo h2 {
@@ -356,6 +381,8 @@
     #about-logo p {
         color: var(--colorGr);
         font-weight: normal;
+        font-size: 1.1rem;
+        line-height: 1.5;
     }
 
     #about-logo .container-fluid {
@@ -363,7 +390,7 @@
     }
 
     .about-logo__show {
-        margin-top: 5%;
+        margin-top: 3%;
     }
 
     .about-logo__show img {
@@ -371,7 +398,7 @@
     }
 
     #about-past {
-        margin: 5% 0 5%;
+        margin: 3% 0 1%;
     }
 
     #about-past .container-fluid {
@@ -390,6 +417,8 @@
     #about-past p {
         color: var(--colorGr);
         font-weight: normal;
+        font-size: 1.1rem;
+        line-height: 1.5;
         text-align: center;
         font-family: var(--fontFamily-lato);
     }
