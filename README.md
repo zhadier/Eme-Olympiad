@@ -2,7 +2,7 @@
 
 # EME Olympiad
 
-> This Webpage is for my Capstone Project for the Html-Css module at Microverse. It is based on an annual event held in my University called EME Olympiad, which is basically an extravaganza of concerts, sport events, arts and so on.
+> This Webpage is based on an annual event held in my University called EME Olympiad, which is basically an extravaganza of concerts, sport events, arts and so on.
 
 ![screenshot](https://user-images.githubusercontent.com/90556221/147119548-d76fed22-56f3-480e-b79c-13bbfb9f10c8.png)
 
